@@ -17,9 +17,10 @@ Player.prototype.addScore = function () {
 };
 
 export function switchTurn(player1, player2, currentPlayer) {
+  debugger;
   var nextPlayer;
   if (currentPlayer === player1) {
-    nextPlayer = player2;
+    nextPlayer = player1;
   } else {
     nextPlayer = player1;
   }

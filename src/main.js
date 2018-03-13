@@ -1,8 +1,8 @@
-import { Player } from './player';
-import { switchTurn } from './player';
-import { roll } from './player';
-import { updateScores } from './player';
-import { animateDice } from './player';
+import { Player } from './../js/player';
+import { switchTurn } from './../js/player';
+import { roll } from './../js/player';
+import { updateScores } from './../js/player';
+import { animateDice } from './../js/player';
 
 var player1 = new Player("bill");
 var player2 = new Player("bob");
@@ -28,10 +28,10 @@ $(document).ready(function() {
       return;
     }
 
-  })
+  });
   $("#hold").click(function() {
     player.addScore();
     updateScores(player1, player2);
     player = switchTurn(player1, player2, player);
-  })
+  });
 });

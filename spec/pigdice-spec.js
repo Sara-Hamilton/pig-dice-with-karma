@@ -1,9 +1,8 @@
-// var Player = require('./../js/player.js').playerModule;
-import { Player } from './../src/player.js';
-import { switchTurn } from './../src/player.js';
-import { roll } from './../src/player.js';
-import { updateScores } from './../src/player.js';
-import { animateDice } from './../src/player.js';
+import { Player } from './../js/player.js';
+import { switchTurn } from './../js/player.js';
+import { roll } from './../js/player.js';
+import { updateScores } from './../js/player.js';
+import { animateDice } from './../js/player.js';
 
 describe('Player', function() {
     var reusablePlayer;
