@@ -35,3 +35,21 @@ describe('roll', function() {
     expect(number).not.toBeNull();
   });
 });
+
+describe('switchTurn', function() {
+  it('switches from player 1 to player 2', function() {
+    var player1 = new Player("bill");
+    var player2 = new Player("bob");
+    var currentPlayer = player1;
+    var nextPlayer = switchTurn(player1, player2, currentPlayer);
+    expect(nextPlayer).toEqual(player2);
+  });
+
+  it('switches from player 2 to player 1', function() {
+    var player1 = new Player("jim");
+    var player2 = new Player("joe");
+    var currentPlayer = player2;
+    var nextPlayer = switchTurn(player1, player2, currentPlayer);
+    expect(nextPlayer).toEqual(player1);
+  });
+});
