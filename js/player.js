@@ -20,7 +20,7 @@ export function switchTurn(player1, player2, currentPlayer) {
   debugger;
   var nextPlayer;
   if (currentPlayer === player1) {
-    nextPlayer = player1;
+    nextPlayer = player2;
   } else {
     nextPlayer = player1;
   }
